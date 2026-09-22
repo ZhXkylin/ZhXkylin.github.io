@@ -37,3 +37,29 @@
 .site-footer .footer-line a:hover{color:white}
 @media(max-width:900px){.page-card-grid{gap:12px}.page-card{padding:21px}.page-card strong{font-size:25px}}
 @media(max-width:680px){.nav a[aria-current="page"]{border-bottom:0;border-left:3px solid var(--orange);padding-left:12px}.page-home{min-height:0}.page-card-grid,.method-grid{grid-template-columns:1fr}.page-card{min-height:210px}.page-intro{padding-block:72px 67px;min-height:0}.page-intro+.section{padding-top:75px}.contact-page{padding-block:90px 70px;min-height:calc(100vh - 140px)}.contact-detail{flex-direction:column;gap:7px}.contact-page .email-link{margin-bottom:70px}}
+
+/* Photography portfolio */
+.home-overview .page-card-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.home-overview .page-card strong{font-size:clamp(21px,2vw,28px)}
+.photo-intro{min-height:400px}
+.photo-section-heading{display:grid;grid-template-columns:1fr minmax(240px,390px);align-items:end;gap:8%;margin-bottom:45px}
+.photo-section-heading>p{color:var(--muted);font-size:15px;line-height:1.8;margin:0 0 5px}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 25px}
+.photo-card{margin:0;min-width:0}
+.photo-feature{grid-column:1 / -1}
+.photo-wide{grid-column:1 / -1;max-width:840px;margin-inline:auto;width:100%}
+.photo-image{display:block;overflow:hidden;background:#e6e8df;line-height:0}
+.photo-image img{display:block;width:100%;height:auto;transition:transform .3s ease}
+.photo-image:hover img,.photo-image:focus-visible img{transform:scale(1.018)}
+.photo-card figcaption{padding-top:16px;border-top:1px solid var(--line);margin-top:14px}
+.photo-number{color:#ac7456;font-size:10px;font-weight:700;letter-spacing:.16em}
+.photo-card h3{font-family:var(--serif);font-size:clamp(25px,2.4vw,36px);font-weight:400;line-height:1.2;margin:8px 0 5px}
+.photo-card figcaption p{color:var(--muted);font-size:13px;margin:0}
+.museum-section{max-width:1220px}
+.museum-photo{max-width:840px;margin-inline:auto}
+.photo-credit{font-size:12px;color:var(--muted);margin:48px 0 0}
+.research-photo-link{border-top:1px solid var(--line);padding-top:25px;margin:50px 0 0;color:var(--muted);font-size:14px}
+.research-photo-link .text-link{margin-left:8px}
+@media(max-width:1060px){.nav{gap:22px}.home-overview .page-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.home-overview .page-card-grid,.photo-grid,.photo-section-heading{grid-template-columns:1fr}.photo-section-heading{gap:22px}.photo-feature,.photo-wide{grid-column:auto}.photo-grid{gap:35px}.photo-intro{min-height:0}.photo-section-heading>p{max-width:520px}}
+@media(prefers-reduced-motion:reduce){.photo-image img{transition:none}}
